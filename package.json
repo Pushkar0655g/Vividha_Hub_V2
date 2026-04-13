@@ -1,0 +1,48 @@
+{
+  "name": "vividhahub-v2",
+  "version": "1.0.0",
+  "description": "Vividha Hub desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.pushkar.vividhahub",
+    "productName": "Vividha Hub",
+    "directories": {
+      "output": "dist"
+    },
+    "extraResources": [
+      {
+        "from": "dist/backend.exe",
+        "to": "backend.exe"
+      },
+      {
+        "from": "dist/ffmpeg.exe",
+        "to": "ffmpeg.exe"
+      },
+      {
+        "from": "dist/ffprobe.exe",
+        "to": "ffprobe.exe"
+      }
+    ],
+    "files": [
+      "main.js",
+      "frontend/**/*",
+      "backend/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

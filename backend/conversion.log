@@ -1,0 +1,1073 @@
+2026-04-06 19:28:06,784 - INFO - Using device: cpu
+2026-04-06 19:28:06,794 - INFO - Progress 0%: Starting...
+2026-04-06 19:28:06,878 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-06 19:28:06,879 - INFO - Progress 20%: Audio extracted
+2026-04-06 19:28:06,879 - INFO - Loading Whisper model on cpu
+2026-04-06 19:28:17,569 - INFO - Transcription complete: 10 segments
+2026-04-06 19:28:18,595 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/segmentation-3.0/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-06 19:28:19,203 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/xvec_transform.npz "HTTP/1.1 302 Found"
+2026-04-06 19:28:19,506 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/plda.npz "HTTP/1.1 302 Found"
+2026-04-06 19:28:19,880 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-06 19:28:39,196 - INFO - Progress 50%: Transcribed + speakers
+2026-04-06 19:28:52,721 - INFO - Progress 65%: Translated
+2026-04-06 19:28:52,722 - INFO - SRT written to C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-06 19:28:52,722 - INFO - Progress 70%: SRT created
+2026-04-06 19:28:52,722 - INFO - === DUBBING PIPELINE ===
+2026-04-06 19:28:52,723 - INFO - Demucs audio separation: AVAILABLE
+2026-04-06 19:28:52,723 - INFO - Progress 72%: Separating background audio...
+2026-04-06 19:28:52,724 - INFO - Running Demucs separation: C:\Users\chirr\Vividhahub_V2\venv\Scripts\python.exe -m demucs.separate -o C:\Users\chirr\Vividhahub_V2\demucs_sep -n...
+2026-04-06 19:28:54,746 - WARNING - Demucs failed: Traceback (most recent call last):
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\urllib\request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, 
+2026-04-06 19:28:54,746 - INFO - Using separated background audio
+2026-04-06 19:28:54,746 - INFO - Progress 75%: Background ready
+2026-04-06 19:28:54,748 - INFO - Segments: 10 \u2192 10 after merge
+2026-04-06 19:28:54,748 - INFO - Segments after overlap prevention: 10
+2026-04-06 19:28:54,917 - WARNING - TTS failed[1]: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001C44744C290> [The specified network name is no longer available]
+2026-04-06 19:28:58,810 - WARNING - TTS failed[3]: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001C44744C290> [The specified network name is no longer available]
+2026-04-06 19:29:09,224 - WARNING - TTS failed[6]: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001C44744C290> [The specified network name is no longer available]
+2026-04-06 19:29:25,318 - INFO - Generated 7 valid TTS segments
+2026-04-06 19:29:25,318 - INFO - Progress 80%: TTS ready (7 segments)
+2026-04-06 19:29:27,138 - INFO - Combined audio written: C:\Users\chirr\Vividhahub_V2\dubbed_audio.aac
+2026-04-06 19:29:27,138 - INFO - Progress 90%: Audio combined
+2026-04-06 19:29:36,913 - INFO - Dubbed+subtitled video with background: C:\Users\chirr\Vividhahub_V2\out_dub.mp4
+2026-04-06 19:29:36,914 - INFO - Progress 100%: Final video created
+2026-04-06 19:29:36,915 - INFO - Processing completed successfully
+2026-04-06 19:36:10,484 - INFO - Using device: cpu
+2026-04-06 19:36:10,487 - INFO - Progress 0%: Starting...
+2026-04-06 19:36:10,588 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-06 19:36:10,588 - INFO - Progress 20%: Audio extracted
+2026-04-06 19:36:37,633 - WARNING - Demucs separation failed: Demucs separation failed: 0%|          | 0.00/80.2M [00:00<?, ?B/s]
+  0%|          | 384k/80.2M [00:00<00:23, 3.55MB/s]
+  2%|2         | 1.88M/80.2M [00:00<00:07, 10.3MB/s]
+  5%|5         | 4.38M/80.2M [00:00<00:04, 17.1MB/s]
+  8%|8         | 6.50M/80.2M [00:00<00:04, 18.8MB/s]
+ 11%|#         | 8.50M/80.2M [00:00<00:03, 19.5MB/s]
+ 14%|#3        | 11.1M/80.2M [00:00<00:03, 22.1MB/s]
+ 17%|#6        | 13.6M/80.2M [00:00<00:02, 23.4MB/s]
+ 20%|##        | 16.2M/80.2M [00:00<00:02, 24.4MB/s]
+ 24%|##3       | 18.9M/80.2M [00:00<00:02, 25.0MB/s]
+ 27%|##6       | 21.4M/80.2M [00:01<00:02, 24.9MB/s]
+ 30%|###       | 24.1M/80.2M [00:01<00:02, 25.8MB/s]
+ 33%|###3      | 26.8M/80.2M [00:01<00:02, 26.3MB/s]
+ 37%|###6      | 29.4M/80.2M [00:01<00:02, 26.2MB/s]
+ 40%|###9      | 31.9M/80.2M [00:01<00:02, 25.1MB/s]
+ 43%|####2     | 34.4M/80.2M [00:01<00:01, 24.9MB/s]
+ 46%|####5     | 36.9M/80.2M [00:01<00:01, 24.7MB/s]
+ 49%|####9     | 39.6M/80.2M [00:01<00:01, 25.8MB/s]
+ 53%|#####2    | 42.4M/80.2M [00:01<00:01, 26.5MB/s]
+ 56%|#####6    | 45.1M/80.2M [00:01<00:01, 26.6MB/s]
+ 60%|#####9    | 47.8M/80.2M [00:02<00:01, 26.7MB/s]
+ 63%|######2   | 50.4M/80.2M [00:02<00:01, 26.3MB/s]
+ 66%|######6   | 53.0M/80.2M [00:02<00:01, 25.9MB/s]
+ 69%|######9   | 55.6M/80.2M [00:02<00:00, 26.2MB/s]
+ 73%|#######2  | 58.2M/80.2M [00:02<00:00, 24.3MB/s]
+ 76%|#######6  | 61.1M/80.2M [00:02<00:00, 25.2MB/s]
+ 79%|#######9  | 63.6M/80.2M [00:02<00:00, 24.3MB/s]
+ 82%|########2 | 66.1M/80.2M [00:02<00:00, 24.8MB/s]
+ 86%|########5 | 68.8M/80.2M [00:02<00:00, 25.5MB/s]
+ 89%|########8 | 71.2M/80.2M [00:03<00:00, 25.7MB/s]
+ 92%|#########2| 74.0M/80.2M [00:03<00:00, 26.3MB/s]
+ 95%|#########5| 76.6M/80.2M [00:03<00:00, 26.7MB/s]
+ 99%|#########8| 79.2M/80.2M [00:03<00:00, 26.6MB/s]
+100%|##########| 80.2M/80.2M [00:03<00:00, 24.6MB/s]
+
+  0%|                                                                                  | 0.0/52.65 [00:00<?, ?seconds/s]
+ 11%|########1                                                                | 5.85/52.65 [00:03<00:26,  1.78seconds/s]
+ 22%|################2                                                        | 11.7/52.65 [00:05<00:18,  2.25seconds/s]
+ 33%|###################6                                       | 17.549999999999997/52.65 [00:07<00:14,  2.44seconds/s]
+ 44%|################################4                                        | 23.4/52.65 [00:09<00:11,  2.57seconds/s]
+ 56%|########################################                                | 29.25/52.65 [00:11<00:09,  2.60seconds/s]
+ 67%|#######################################3                   | 35.099999999999994/52.65 [00:13<00:06,  2.65seconds/s]
+ 78%|#############################################8             | 40.949999999999996/52.65 [00:16<00:04,  2.67seconds/s]
+ 89%|################################################################8        | 46.8/52.65 [00:18<00:02,  2.69seconds/s]
+100%|########################################################################| 52.65/52.65 [00:20<00:00,  2.70seconds/s]
+100%|########################################################################| 52.65/52.65 [00:20<00:00,  2.58seconds/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 219, in <module>
+    main()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 199, in main
+    save_audio(source, str(stem), **kwargs)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\audio.py", line 260, in save_audio
+    ta.save(str(path), wav, sample_rate=samplerate,
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\__init__.py", line 178, in save
+    return save_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\_torchcodec.py", line 246, in save_with_torchcodec
+    from torchcodec.encoders import AudioEncoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\__init__.py", line 12, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\decoders\__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\__init__.py", line 8, in <module>
+    from ._decoder_utils import create_audio_decoder, create_video_decoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_decoder_utils.py", line 13, in <module>
+    from torchcodec._core._metadata import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_metadata.py", line 15, in <module>
+    from torchcodec._core.ops import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\ops.py", line 38, in <module>
+    load_torchcodec_shared_libraries()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 111, in load_torchcodec_shared_libraries
+    raise RuntimeError(
+RuntimeError: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cpu) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].. Falling back to original audio
+2026-04-06 19:36:37,633 - INFO - Loading Whisper model on cpu
+2026-04-06 19:36:48,274 - INFO - Transcription complete: 10 segments
+2026-04-06 19:36:49,918 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-06 19:37:09,104 - INFO - Progress 50%: Transcribed + speaker detected
+2026-04-06 19:37:09,105 - INFO - Translating from en to te
+2026-04-06 19:37:16,379 - INFO - Translation complete.
+2026-04-06 19:37:16,379 - INFO - Translating from en to te
+2026-04-06 19:37:22,327 - INFO - Translation complete.
+2026-04-06 19:37:22,327 - INFO - Progress 65%: Translated
+2026-04-06 19:37:22,327 - INFO - SRT file written to C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-06 19:37:22,327 - INFO - Progress 70%: Subtitles created
+2026-04-06 19:37:22,328 - INFO - === DUBBING PIPELINE ===
+2026-04-06 19:37:22,328 - INFO - Segments: 10 \u2192 10 (merged small ones only)
+2026-04-06 19:37:22,328 - INFO - Overlap fixed: 10 \u2192 10
+2026-04-06 19:37:22,328 - INFO - Processing 10 segments for TTS
+2026-04-06 19:37:25,995 - INFO - TTS: '\u0c38\u0c30\u0c47, \u0c2b\u0c4b\u0c32\u0c4d\u0c21\u0c2c\u0c41\u0c32\u0c4d\u200c\u0c32\u0c41 \u0c2e\u0c41\u0c02\u0c26\u0c41\u0c17\u0c3e \u0c38\u0c4d\u0c35\u0c40...' \u2192 te-IN-MohanNeural (rate=+0%, pitch=-2Hz)
+2026-04-06 19:37:26,264 - ERROR - TTS error: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000026D5195C560> [The specified network name is no longer available]
+2026-04-06 19:37:26,264 - WARNING - Segment 2: TTS generation failed
+2026-04-06 19:37:28,885 - INFO - TTS: '\u0c2b\u0c4b\u0c28\u0c4d \u0c05\u0c02\u0c1f\u0c47 \u0c35\u0c3e\u0c1f\u0c3f\u0c32\u0c4b \u0c12\u0c15\u0c1f\u0c3f \u0c38\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f ...' \u2192 te-IN-MohanNeural (rate=+5%, pitch=-2Hz)
+2026-04-06 19:37:29,127 - ERROR - TTS error: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000026D5195C560> [The specified network name is no longer available]
+2026-04-06 19:37:29,127 - WARNING - Segment 4: TTS generation failed
+2026-04-06 19:37:33,854 - INFO - TTS: '\u0c05\u0c26\u0c3f \u0c38\u0c17\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c2e\u0c41\u0c21\u0c41\u0c1a\u0c41\u0c15\u0c41\u0c02\u0c26\u0c3f, \u0c15\u0c3e\u0c28\u0c40 ...' \u2192 te-IN-MohanNeural (rate=+5%, pitch=-2Hz)
+2026-04-06 19:37:33,945 - WARNING - Speed adjust failed: ffmpeg version 2026-03-30-git-e54e117998-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 29.100 / 60. 29.100
+  libavcodec     62. 29.101 / 62. 29.101
+  libavformat    62. 13.101 / 62. 13.101
+  libavdevice    62.  4.100 / 62.  4.100
+  libavfilter    11. 15.101 / 11. 15.101
+  libswscale      9.  7.100 /  9.  7.100
+  libswresample   6.  4.100 /  6.  4.100
+[in#0/mp3 @ 000001c1a67f70c0] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\chirr\Vividhahub_V2\tts_segments\segment_5.mp3':
+  Duration: 00:00:05.18, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[mp3 @ 000001c1a67fabc0] Invalid audio stream. Exactly one MP3 audio stream is required.
+[out#0/mp3 @ 000001c1a6802a40] Could not write header (incorrect codec parameters ?): Invalid argument
+[af#0:0 @ 000001c1a7f5a900] Error sending frames to consumers: Invalid argument
+[af#0:0 @ 000001c1a7f5a900] Task finished with error code: -22 (Invalid argument)
+[af#0:0 @ 000001c1a7f5a900] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp3 @ 000001c1a6802a40] Nothing was written into output file, because at least one of its streams received no packets.
+size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.03    
+[aac @ 000001c1a67fd240] Qavg: nan
+Conversion failed!
+2026-04-06 19:37:34,159 - ERROR - TTS error: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000026D5195C560> [The specified network name is no longer available]
+2026-04-06 19:37:34,159 - WARNING - Segment 6: TTS generation failed
+2026-04-06 19:37:37,311 - INFO - TTS: '\u0c15\u0c46\u0c2e\u0c46\u0c30\u0c3e\u0c32\u0c41 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c2c\u0c4d\u0c2f\u0c3e\u0c1f\u0c30\u0c40 \u0c2e\u0c30\u0c3f\u0c2f\u0c41 \u0c07...' \u2192 te-IN-MohanNeural (rate=-5%, pitch=+2Hz)
+2026-04-06 19:37:37,407 - WARNING - Speed adjust failed: ffmpeg version 2026-03-30-git-e54e117998-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60. 29.100 / 60. 29.100
+  libavcodec     62. 29.101 / 62. 29.101
+  libavformat    62. 13.101 / 62. 13.101
+  libavdevice    62.  4.100 / 62.  4.100
+  libavfilter    11. 15.101 / 11. 15.101
+  libswscale      9.  7.100 /  9.  7.100
+  libswresample   6.  4.100 /  6.  4.100
+[in#0/mp3 @ 000001da50d170c0] Estimating duration from bitrate, this may be inaccurate
+Input #0, mp3, from 'C:\Users\chirr\Vividhahub_V2\tts_segments\segment_7.mp3':
+  Duration: 00:00:05.74, start: 0.000000, bitrate: 48 kb/s
+  Stream #0:0: Audio: mp3 (mp3float), 24000 Hz, mono, fltp, 48 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (mp3 (mp3float) -> aac (native))
+Press [q] to stop, [?] for help
+[mp3 @ 000001da50d1abc0] Invalid audio stream. Exactly one MP3 audio stream is required.
+[out#0/mp3 @ 000001da50d22a40] Could not write header (incorrect codec parameters ?): Invalid argument
+[af#0:0 @ 000001da50e6a900] Error sending frames to consumers: Invalid argument
+[af#0:0 @ 000001da50e6a900] Task finished with error code: -22 (Invalid argument)
+[af#0:0 @ 000001da50e6a900] Terminating thread with return code -22 (Invalid argument)
+[out#0/mp3 @ 000001da50d22a40] Nothing was written into output file, because at least one of its streams received no packets.
+size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.03    
+[aac @ 000001da50d1d240] Qavg: nan
+Conversion failed!
+2026-04-06 19:37:37,609 - ERROR - TTS error: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000026D5195C560> [The specified network name is no longer available]
+2026-04-06 19:37:37,610 - WARNING - Segment 8: TTS generation failed
+2026-04-06 19:37:37,782 - ERROR - TTS error: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000026D5195C560> [The specified network name is no longer available]
+2026-04-06 19:37:37,782 - WARNING - Segment 9: TTS generation failed
+2026-04-06 19:37:37,783 - INFO - \u2713 Generated 4 TTS segments (merged+cleaned)
+2026-04-06 19:37:37,783 - INFO - \u2713 Generated 4 TTS segments
+2026-04-06 19:37:37,783 - INFO - Progress 80%: TTS ready (4 segments)
+2026-04-06 19:37:38,010 - INFO - [TRIM] 7.51s \u2192 6.85s
+2026-04-06 19:37:38,147 - INFO - [TRIM] 5.18s \u2192 4.41s
+2026-04-06 19:37:38,291 - INFO - [TRIM] 5.74s \u2192 5.05s
+2026-04-06 19:37:38,657 - INFO - Progress 90%: Audio combined
+2026-04-06 19:37:47,835 - INFO - \u2713 Final dubbed+subtitled video: C:\Users\chirr\Vividhahub_V2\out_dub.mp4
+2026-04-06 19:37:47,835 - INFO - Progress 100%: Complete
+2026-04-06 19:37:47,835 - INFO - \u2713 Processing complete!
+2026-04-06 19:37:47,836 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-06 19:37:47,836 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-06 19:37:47,836 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\dubbed_audio.aac
+2026-04-06 19:37:47,836 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_7_adj.mp3
+2026-04-06 19:37:47,838 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_1.mp3
+2026-04-06 19:37:47,838 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_5.mp3
+2026-04-06 19:37:47,838 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_5_adj.mp3
+2026-04-06 19:37:47,838 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_3.mp3
+2026-04-06 19:37:47,838 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\segment_7.mp3
+2026-04-10 21:50:59,001 - INFO - Using device: cpu
+2026-04-10 21:50:59,005 - INFO - Progress 0%: Starting...
+2026-04-10 21:51:01,511 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-10 21:51:01,511 - INFO - Progress 20%: Audio extracted
+2026-04-10 21:51:31,737 - WARNING - Demucs separation failed: Demucs separation failed: 0%|                                                                                  | 0.0/52.65 [00:00<?, ?seconds/s]
+ 11%|########1                                                                | 5.85/52.65 [00:04<00:35,  1.33seconds/s]
+ 22%|################2                                                        | 11.7/52.65 [00:07<00:23,  1.75seconds/s]
+ 33%|###################6                                       | 17.549999999999997/52.65 [00:09<00:18,  1.88seconds/s]
+ 44%|################################4                                        | 23.4/52.65 [00:12<00:15,  1.95seconds/s]
+ 56%|########################################                                | 29.25/52.65 [00:15<00:11,  2.01seconds/s]
+ 67%|#######################################3                   | 35.099999999999994/52.65 [00:17<00:08,  2.16seconds/s]
+ 78%|#############################################8             | 40.949999999999996/52.65 [00:20<00:05,  2.25seconds/s]
+ 89%|################################################################8        | 46.8/52.65 [00:22<00:02,  2.23seconds/s]
+100%|########################################################################| 52.65/52.65 [00:25<00:00,  2.28seconds/s]
+100%|########################################################################| 52.65/52.65 [00:25<00:00,  2.09seconds/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 219, in <module>
+    main()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 199, in main
+    save_audio(source, str(stem), **kwargs)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\audio.py", line 260, in save_audio
+    ta.save(str(path), wav, sample_rate=samplerate,
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\__init__.py", line 178, in save
+    return save_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\_torchcodec.py", line 246, in save_with_torchcodec
+    from torchcodec.encoders import AudioEncoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\__init__.py", line 12, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\decoders\__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\__init__.py", line 8, in <module>
+    from ._decoder_utils import create_audio_decoder, create_video_decoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_decoder_utils.py", line 13, in <module>
+    from torchcodec._core._metadata import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_metadata.py", line 15, in <module>
+    from torchcodec._core.ops import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\ops.py", line 38, in <module>
+    load_torchcodec_shared_libraries()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 111, in load_torchcodec_shared_libraries
+    raise RuntimeError(
+RuntimeError: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cpu) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].. Falling back to original audio
+2026-04-10 21:51:31,737 - INFO - Loading Whisper model on cpu
+2026-04-10 21:51:42,960 - INFO - Transcription complete: 10 segments
+2026-04-10 21:51:42,960 - ERROR - ERROR: HF_TOKEN is missing. Set it before running the backend.
+2026-04-10 21:51:42,960 - INFO - Progress -1%: Failed: HF_TOKEN is missing. Set it before running the backend.
+2026-04-10 21:51:42,961 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-10 21:52:30,467 - INFO - Using device: cpu
+2026-04-10 21:52:30,469 - INFO - Progress 0%: Starting...
+2026-04-10 21:52:30,544 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-10 21:52:30,545 - INFO - Progress 20%: Audio extracted
+2026-04-10 21:52:52,374 - WARNING - Demucs separation failed: Demucs separation failed: 0%|                                                                                  | 0.0/52.65 [00:00<?, ?seconds/s]
+ 11%|########1                                                                | 5.85/52.65 [00:02<00:23,  1.99seconds/s]
+ 22%|################2                                                        | 11.7/52.65 [00:04<00:16,  2.43seconds/s]
+ 33%|###################6                                       | 17.549999999999997/52.65 [00:07<00:13,  2.60seconds/s]
+ 44%|################################4                                        | 23.4/52.65 [00:09<00:10,  2.67seconds/s]
+ 56%|########################################                                | 29.25/52.65 [00:11<00:08,  2.72seconds/s]
+ 67%|#######################################3                   | 35.099999999999994/52.65 [00:13<00:06,  2.73seconds/s]
+ 78%|#############################################8             | 40.949999999999996/52.65 [00:15<00:04,  2.76seconds/s]
+ 89%|################################################################8        | 46.8/52.65 [00:17<00:02,  2.70seconds/s]
+100%|########################################################################| 52.65/52.65 [00:19<00:00,  2.75seconds/s]
+100%|########################################################################| 52.65/52.65 [00:19<00:00,  2.67seconds/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 219, in <module>
+    main()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 199, in main
+    save_audio(source, str(stem), **kwargs)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\audio.py", line 260, in save_audio
+    ta.save(str(path), wav, sample_rate=samplerate,
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\__init__.py", line 178, in save
+    return save_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\_torchcodec.py", line 246, in save_with_torchcodec
+    from torchcodec.encoders import AudioEncoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\__init__.py", line 12, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\decoders\__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\__init__.py", line 8, in <module>
+    from ._decoder_utils import create_audio_decoder, create_video_decoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_decoder_utils.py", line 13, in <module>
+    from torchcodec._core._metadata import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_metadata.py", line 15, in <module>
+    from torchcodec._core.ops import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\ops.py", line 38, in <module>
+    load_torchcodec_shared_libraries()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 111, in load_torchcodec_shared_libraries
+    raise RuntimeError(
+RuntimeError: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cpu) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].. Falling back to original audio
+2026-04-10 21:52:52,374 - INFO - Loading Whisper model on cpu
+2026-04-10 21:53:03,095 - INFO - Transcription complete: 10 segments
+2026-04-10 21:53:03,560 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-3.1/resolve/main/config.yaml "HTTP/1.1 200 OK"
+2026-04-10 21:53:04,620 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/segmentation-3.0/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-10 21:53:05,167 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/xvec_transform.npz "HTTP/1.1 302 Found"
+2026-04-10 21:53:05,489 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/plda.npz "HTTP/1.1 302 Found"
+2026-04-10 21:53:05,939 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-10 21:53:25,167 - INFO - Progress 50%: Transcribed + speaker detected
+2026-04-10 21:53:25,167 - INFO - Translating from en to te
+2026-04-10 21:53:35,595 - INFO - Translation complete.
+2026-04-10 21:53:35,595 - INFO - Progress 65%: Translated
+2026-04-10 21:53:35,596 - INFO - SRT file written to C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-10 21:53:35,596 - INFO - Progress 70%: Subtitles created
+2026-04-10 21:53:35,597 - INFO - === DUBBING PIPELINE ===
+2026-04-10 21:53:47,607 - INFO - Speaker SPEAKER_00: median F0=109.4Hz \u2192 male
+2026-04-10 21:53:47,622 - INFO - Speaker sample for SPEAKER_00: 37.5s \u2192 C:\Users\chirr\Vividhahub_V2\tts_segments\speaker_sample_SPEAKER_00.wav
+2026-04-10 21:53:47,622 - INFO - Segments: 10 \u2192 10 (merged small ones only)
+2026-04-10 21:53:51,620 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000017A79B08EF0> [The specified network name is no longer available]
+2026-04-10 21:53:51,620 - WARNING - Segment 3: TTS failed, skipping
+2026-04-10 21:53:51,788 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000017A79B08EF0> [The specified network name is no longer available]
+2026-04-10 21:53:51,788 - WARNING - Segment 4: TTS failed, skipping
+2026-04-10 21:53:51,925 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000017A79B08EF0> [The specified network name is no longer available]
+2026-04-10 21:53:51,925 - WARNING - Segment 5: TTS failed, skipping
+2026-04-10 21:53:52,051 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x0000017A79B08EF0> [The specified network name is no longer available]
+2026-04-10 21:53:52,051 - WARNING - Segment 6: TTS failed, skipping
+2026-04-10 21:53:55,057 - INFO - [TRIM] 7.32s \u2192 4.46s
+2026-04-10 21:53:56,521 - INFO - [TRIM] 7.97s \u2192 4.70s
+2026-04-10 21:53:56,545 - INFO - \u2713 Generated 5 TTS segments
+2026-04-10 21:53:56,545 - INFO - Progress 80%: TTS ready (5 segments)
+2026-04-10 21:53:56,958 - INFO - [TRIM] 6.83s \u2192 6.80s
+2026-04-10 21:53:57,166 - INFO - [TRIM] 4.75s \u2192 4.39s
+2026-04-10 21:53:57,377 - INFO - [TRIM] 5.03s \u2192 5.00s
+2026-04-10 21:53:57,504 - INFO - [TRIM] 4.46s \u2192 4.08s
+2026-04-10 21:53:57,660 - INFO - [TRIM] 4.70s \u2192 4.68s
+2026-04-10 21:53:58,090 - INFO - Progress 90%: Audio combined
+2026-04-10 21:54:08,525 - INFO - \u2713 Ducked mix complete: C:\Users\chirr\Vividhahub_V2\out_dub.mp4
+2026-04-10 21:54:08,525 - INFO - Progress 100%: Complete
+2026-04-10 21:54:08,525 - INFO - \u2713 Processing complete!
+2026-04-10 21:54:08,527 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-10 21:54:08,527 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-10 21:54:08,527 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\dubbed_audio.aac
+2026-04-10 21:54:08,527 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_2_adj.wav
+2026-04-10 21:54:08,528 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_8_adj.wav
+2026-04-10 21:54:08,528 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_1_adj.wav
+2026-04-10 21:54:08,528 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_9_adj.wav
+2026-04-10 21:54:08,528 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_7_adj.wav
+2026-04-11 12:21:40,030 - INFO - Using device: cpu
+2026-04-11 12:21:40,031 - INFO - Progress 0%: Starting...
+2026-04-11 12:21:41,066 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-11 12:21:41,066 - INFO - Progress 20%: Audio extracted
+2026-04-11 12:22:08,159 - WARNING - Demucs separation failed: Demucs separation failed: 0%|                                                                                  | 0.0/52.65 [00:00<?, ?seconds/s]
+ 11%|########1                                                                | 5.85/52.65 [00:03<00:29,  1.58seconds/s]
+ 22%|################2                                                        | 11.7/52.65 [00:06<00:21,  1.91seconds/s]
+ 33%|###################6                                       | 17.549999999999997/52.65 [00:08<00:16,  2.10seconds/s]
+ 44%|################################4                                        | 23.4/52.65 [00:11<00:13,  2.22seconds/s]
+ 56%|########################################                                | 29.25/52.65 [00:13<00:10,  2.28seconds/s]
+ 67%|#######################################3                   | 35.099999999999994/52.65 [00:16<00:07,  2.33seconds/s]
+ 78%|#############################################8             | 40.949999999999996/52.65 [00:18<00:05,  2.32seconds/s]
+ 89%|################################################################8        | 46.8/52.65 [00:21<00:02,  2.27seconds/s]
+100%|########################################################################| 52.65/52.65 [00:23<00:00,  2.28seconds/s]
+100%|########################################################################| 52.65/52.65 [00:23<00:00,  2.21seconds/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 219, in <module>
+    main()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 199, in main
+    save_audio(source, str(stem), **kwargs)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\audio.py", line 260, in save_audio
+    ta.save(str(path), wav, sample_rate=samplerate,
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\__init__.py", line 178, in save
+    return save_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\_torchcodec.py", line 246, in save_with_torchcodec
+    from torchcodec.encoders import AudioEncoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\__init__.py", line 12, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\decoders\__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\__init__.py", line 8, in <module>
+    from ._decoder_utils import create_audio_decoder, create_video_decoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_decoder_utils.py", line 13, in <module>
+    from torchcodec._core._metadata import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_metadata.py", line 15, in <module>
+    from torchcodec._core.ops import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\ops.py", line 38, in <module>
+    load_torchcodec_shared_libraries()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 111, in load_torchcodec_shared_libraries
+    raise RuntimeError(
+RuntimeError: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cpu) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].. Falling back to original audio
+2026-04-11 12:22:08,159 - INFO - Loading Whisper model on cpu
+2026-04-11 12:22:19,881 - INFO - Transcription complete: 10 segments
+2026-04-11 12:22:21,273 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-11 12:22:40,858 - INFO - Progress 50%: Transcribed + speaker detected
+2026-04-11 12:22:40,859 - INFO - Translating from en to hi
+2026-04-11 12:22:51,698 - INFO - Translation complete.
+2026-04-11 12:22:51,698 - INFO - Progress 65%: Translated
+2026-04-11 12:22:51,703 - INFO - SRT file written to C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-11 12:22:51,703 - INFO - Progress 70%: Subtitles created
+2026-04-11 12:22:51,703 - INFO - === DUBBING PIPELINE ===
+2026-04-11 12:23:01,046 - INFO - Speaker SPEAKER_00: median F0=109.4Hz \u2192 male
+2026-04-11 12:23:01,067 - INFO - Speaker sample for SPEAKER_00: 37.5s \u2192 C:\Users\chirr\Vividhahub_V2\tts_segments\speaker_sample_SPEAKER_00.wav
+2026-04-11 12:23:01,067 - INFO - Segments: 10 \u2192 10 (merged small ones only)
+2026-04-11 12:23:03,628 - WARNING - XTTS2 failed:  [!] You must agree to the terms of service to use this model.. Falling back to Edge-TTS.
+2026-04-11 12:27:03,285 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:27:04,098 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001F877268EF0> [The specified network name is no longer available]
+2026-04-11 12:27:04,098 - WARNING - Segment 2: TTS failed, skipping
+2026-04-11 12:27:10,806 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:27:13,625 - INFO - [TRIM] 7.49s \u2192 5.06s
+2026-04-11 12:28:36,503 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:28:43,009 - INFO - [TRIM] 8.30s \u2192 4.86s
+2026-04-11 12:28:46,652 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:28:48,582 - INFO - [TRIM] 8.78s \u2192 4.38s
+2026-04-11 12:30:07,575 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:30:09,612 - INFO - [TRIM] 7.08s \u2192 4.98s
+2026-04-11 12:30:12,693 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:30:12,841 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001F877268EF0> [The specified network name is no longer available]
+2026-04-11 12:30:12,841 - WARNING - Segment 7: TTS failed, skipping
+2026-04-11 12:30:16,191 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:30:18,778 - INFO - [TRIM] 8.11s \u2192 4.46s
+2026-04-11 12:30:19,821 - WARNING - XTTS2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)). Falling back to Edge-TTS.
+2026-04-11 12:30:21,502 - INFO - [TRIM] 8.83s \u2192 4.70s
+2026-04-11 12:30:21,526 - INFO - \u2713 Generated 7 TTS segments
+2026-04-11 12:30:21,526 - INFO - Progress 80%: TTS ready (7 segments)
+2026-04-11 12:30:21,951 - INFO - [TRIM] 6.80s \u2192 6.78s
+2026-04-11 12:30:22,093 - INFO - [TRIM] 5.06s \u2192 5.04s
+2026-04-11 12:30:22,229 - INFO - [TRIM] 4.86s \u2192 4.84s
+2026-04-11 12:30:22,358 - INFO - [TRIM] 4.38s \u2192 4.33s
+2026-04-11 12:30:22,492 - INFO - [TRIM] 4.98s \u2192 4.96s
+2026-04-11 12:30:22,615 - INFO - [TRIM] 4.46s \u2192 4.44s
+2026-04-11 12:30:22,749 - INFO - [TRIM] 4.70s \u2192 4.44s
+2026-04-11 12:30:23,286 - INFO - Progress 90%: Audio combined
+2026-04-11 12:30:32,135 - INFO - \u2713 Ducked mix complete: C:\Users\chirr\Vividhahub_V2\out_dub.mp4
+2026-04-11 12:30:32,135 - INFO - Progress 100%: Complete
+2026-04-11 12:30:32,135 - INFO - \u2713 Processing complete!
+2026-04-11 12:30:32,137 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-11 12:30:32,137 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-11 12:30:32,138 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\dubbed_audio.aac
+2026-04-11 12:30:32,138 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_9_adj.wav
+2026-04-11 12:30:32,138 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_8_adj.wav
+2026-04-11 12:30:32,138 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_3_adj.wav
+2026-04-11 12:30:32,138 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_1_adj.wav
+2026-04-11 12:30:32,139 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_4_adj.wav
+2026-04-11 12:30:32,139 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_5_adj.wav
+2026-04-11 12:30:32,139 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_6_adj.wav
+2026-04-11 12:34:27,252 - INFO - Using device: cpu
+2026-04-11 12:34:27,253 - INFO - Progress 0%: Starting...
+2026-04-11 12:34:27,335 - INFO - Audio extracted to C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-11 12:34:27,335 - INFO - Progress 20%: Audio extracted
+2026-04-11 12:34:48,899 - WARNING - Demucs separation failed: Demucs separation failed: 0%|                                                                                  | 0.0/52.65 [00:00<?, ?seconds/s]
+ 11%|########1                                                                | 5.85/52.65 [00:02<00:23,  2.02seconds/s]
+ 22%|################2                                                        | 11.7/52.65 [00:04<00:16,  2.43seconds/s]
+ 33%|###################6                                       | 17.549999999999997/52.65 [00:06<00:13,  2.63seconds/s]
+ 44%|################################4                                        | 23.4/52.65 [00:08<00:10,  2.74seconds/s]
+ 56%|########################################                                | 29.25/52.65 [00:10<00:08,  2.79seconds/s]
+ 67%|#######################################3                   | 35.099999999999994/52.65 [00:13<00:06,  2.83seconds/s]
+ 78%|#############################################8             | 40.949999999999996/52.65 [00:15<00:04,  2.85seconds/s]
+ 89%|################################################################8        | 46.8/52.65 [00:17<00:02,  2.85seconds/s]
+100%|########################################################################| 52.65/52.65 [00:19<00:00,  2.82seconds/s]
+100%|########################################################################| 52.65/52.65 [00:19<00:00,  2.74seconds/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 219, in <module>
+    main()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\separate.py", line 199, in main
+    save_audio(source, str(stem), **kwargs)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\demucs\audio.py", line 260, in save_audio
+    ta.save(str(path), wav, sample_rate=samplerate,
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\__init__.py", line 178, in save
+    return save_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchaudio\_torchcodec.py", line 246, in save_with_torchcodec
+    from torchcodec.encoders import AudioEncoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\__init__.py", line 12, in <module>
+    from . import decoders, encoders, samplers, transforms  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\decoders\__init__.py", line 7, in <module>
+    from .._core import AudioStreamMetadata, VideoStreamMetadata
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\__init__.py", line 8, in <module>
+    from ._decoder_utils import create_audio_decoder, create_video_decoder
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_decoder_utils.py", line 13, in <module>
+    from torchcodec._core._metadata import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\_metadata.py", line 15, in <module>
+    from torchcodec._core.ops import (
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_core\ops.py", line 38, in <module>
+    load_torchcodec_shared_libraries()
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 111, in load_torchcodec_shared_libraries
+    raise RuntimeError(
+RuntimeError: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cpu) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core8.dll
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core7.dll
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core6.dll
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core5.dll
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "C:\Users\chirr\AppData\Local\Programs\Python\Python311\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll' (or one of its dependencies). Try using the full path with constructor syntax.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\_internally_replaced_utils.py", line 93, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torch\_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: C:\Users\chirr\Vividhahub_V2\venv\Lib\site-packages\torchcodec\libtorchcodec_core4.dll
+[end of libtorchcodec loading traceback].. Falling back to original audio
+2026-04-11 12:34:48,901 - INFO - Loading Whisper model on cpu
+2026-04-11 12:34:59,860 - INFO - Transcription complete: 10 segments
+2026-04-11 12:35:00,248 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-3.1/resolve/main/config.yaml "HTTP/1.1 200 OK"
+2026-04-11 12:35:01,464 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/segmentation-3.0/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-11 12:35:02,026 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/xvec_transform.npz "HTTP/1.1 302 Found"
+2026-04-11 12:35:02,343 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/speaker-diarization-community-1/resolve/main/plda/plda.npz "HTTP/1.1 302 Found"
+2026-04-11 12:35:02,841 - INFO - HTTP Request: HEAD https://huggingface.co/pyannote/wespeaker-voxceleb-resnet34-LM/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-04-11 12:35:21,328 - INFO - Progress 50%: Transcribed + speaker detected
+2026-04-11 12:35:21,329 - INFO - Translating from en to te
+2026-04-11 12:35:26,933 - INFO - Translation complete.
+2026-04-11 12:35:26,933 - INFO - Progress 65%: Translated
+2026-04-11 12:35:26,934 - INFO - SRT file written to C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-11 12:35:26,934 - INFO - Progress 70%: Subtitles created
+2026-04-11 12:35:26,935 - INFO - === DUBBING PIPELINE ===
+2026-04-11 12:35:34,696 - INFO - Speaker SPEAKER_00: median F0=109.4Hz \u2192 male
+2026-04-11 12:35:34,710 - INFO - Speaker sample for SPEAKER_00: 37.5s \u2192 C:\Users\chirr\Vividhahub_V2\tts_segments\speaker_sample_SPEAKER_00.wav
+2026-04-11 12:35:34,711 - INFO - Segments: 10 \u2192 10 (merged small ones only)
+2026-04-11 12:35:34,865 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x00000258EF3F8EF0> [The specified network name is no longer available]
+2026-04-11 12:35:34,865 - WARNING - Segment 1: TTS failed, skipping
+2026-04-11 12:35:35,019 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x00000258EF3F8EF0> [The specified network name is no longer available]
+2026-04-11 12:35:35,019 - WARNING - Segment 2: TTS failed, skipping
+2026-04-11 12:35:35,152 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x00000258EF3F8EF0> [The specified network name is no longer available]
+2026-04-11 12:35:35,153 - WARNING - Segment 3: TTS failed, skipping
+2026-04-11 12:35:36,728 - INFO - [TRIM] 7.68s \u2192 4.86s
+2026-04-11 12:35:39,975 - ERROR - Edge-TTS failed: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x00000258EF3F8EF0> [The specified network name is no longer available]
+2026-04-11 12:35:39,975 - WARNING - Segment 7: TTS failed, skipping
+2026-04-11 12:35:41,186 - INFO - [TRIM] 7.32s \u2192 4.46s
+2026-04-11 12:35:42,454 - INFO - [TRIM] 7.97s \u2192 4.70s
+2026-04-11 12:35:42,480 - INFO - \u2713 Generated 5 TTS segments
+2026-04-11 12:35:42,480 - INFO - Progress 80%: TTS ready (5 segments)
+2026-04-11 12:35:42,780 - INFO - [TRIM] 4.86s \u2192 4.84s
+2026-04-11 12:35:42,987 - INFO - [TRIM] 4.38s \u2192 4.36s
+2026-04-11 12:35:43,276 - INFO - [TRIM] 4.99s \u2192 4.88s
+2026-04-11 12:35:43,406 - INFO - [TRIM] 4.46s \u2192 4.44s
+2026-04-11 12:35:43,562 - INFO - [TRIM] 4.70s \u2192 4.68s
+2026-04-11 12:35:43,935 - INFO - Progress 90%: Audio combined
+2026-04-11 12:35:53,329 - INFO - \u2713 Ducked mix complete: C:\Users\chirr\Vividhahub_V2\out_dub.mp4
+2026-04-11 12:35:53,329 - INFO - Progress 100%: Complete
+2026-04-11 12:35:53,330 - INFO - \u2713 Processing complete!
+2026-04-11 12:35:53,330 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_audio.wav
+2026-04-11 12:35:53,331 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\temp_subtitles.srt
+2026-04-11 12:35:53,331 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\dubbed_audio.aac
+2026-04-11 12:35:53,331 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_4_adj.wav
+2026-04-11 12:35:53,331 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_6_adj.wav
+2026-04-11 12:35:53,332 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_5_adj.wav
+2026-04-11 12:35:53,332 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_8_adj.wav
+2026-04-11 12:35:53,332 - INFO - Cleaned: C:\Users\chirr\Vividhahub_V2\tts_segments\seg_9_adj.wav

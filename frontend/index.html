@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vividha Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Vividha Hub</h1>
+    <p class="sub">Video translation and subtitle desktop app</p>
+
+    <div class="card">
+      <label>Selected Video</label>
+      <div class="row">
+        <input type="text" id="videoPath" readonly placeholder="Choose a video file" />
+        <button id="browseVideoBtn">Browse</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <label>Output Folder</label>
+      <div class="row">
+        <input type="text" id="outputDir" readonly placeholder="Choose output folder" />
+        <button id="browseOutputBtn">Browse</button>
+      </div>
+    </div>
+
+    <div class="card grid">
+      <div>
+        <label>Input Language</label>
+        <select id="inputLang">
+          <option>english</option>
+          <option>hindi</option>
+          <option>telugu</option>
+          <option>spanish</option>
+          <option>french</option>
+          <option>german</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Audio Language</label>
+        <select id="audioLang">
+          <option>english</option>
+          <option>hindi</option>
+          <option>telugu</option>
+          <option>spanish</option>
+          <option>french</option>
+          <option>german</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Subtitle Language</label>
+        <select id="subtitleLang">
+          <option>hindi</option>
+          <option>english</option>
+          <option>telugu</option>
+          <option>spanish</option>
+          <option>french</option>
+          <option>german</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="card">
+      <label>Processing Mode</label>
+      <div class="mode-group">
+        <label class="mode-option">
+          <input type="radio" name="processMode" value="subtitles" checked />
+          <span>Subtitles Only</span>
+        </label>
+
+        <label class="mode-option">
+          <input type="radio" name="processMode" value="dubbing" />
+          <span>Dub Audio + Subtitles</span>
+        </label>
+      </div>
+      <p class="mode-note">
+        Subtitles Only keeps original audio. Dub Audio + Subtitles replaces audio with translated voice.
+      </p>
+    </div>
+
+    <div class="card">
+      <button id="processBtn" class="process-btn">Process Video</button>
+    </div>
+
+    <div class="card">
+      <label>Progress</label>
+      <div class="progress-wrap">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+      <p id="progressText">Waiting...</p>
+    </div>
+
+    <div class="card">
+      <label>Logs</label>
+      <pre id="logs"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
